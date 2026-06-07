@@ -1,0 +1,22 @@
+/* Fonts  */
+
+/* Para títulos principales */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+/* Para textos secundarios */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+@import "tailwindcss";
+
+
+
+
+@theme {
+  --font-caveatbrush: "Caveat Brush", cursive;
+  --font-assistant: "Assistant", sans-serif;
+
+  --color-bg-beige1: #fcf9eb;
+  --color-bg-beige2: #faf4dc;
+  --color-bg-pink1: #fb2e71;
+
+  --color-custom-text-color: #2d2e2e;
+}
