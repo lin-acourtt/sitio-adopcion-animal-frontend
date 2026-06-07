@@ -15,9 +15,6 @@ export const animalAPI = {
     getAllAnimals: async() => {
         try {
             const response = await axios.get(`${baseURL}/animal/`);
-            console.log("Prueba")
-            console.log(response)
-            console.log("Prueba")
             return response.data;
         } catch (error) {
             handleError(error);
@@ -26,7 +23,7 @@ export const animalAPI = {
 
     getAnimal: async(animalID) => {
         try {
-            const response = await axios.get(`${baseURL}/animal/${animalID}`);
+            const response = await axios.get(`${baseURL}/animal/${animalID}/`);
             return response.data;
         } catch (error) {
             handleError(error);
@@ -38,7 +35,7 @@ export const adoptionAPI = {
 
     submitAdoptionRequest: async(formData) => {
         try {
-            const response = await axios.post(`${baseURL}/adoption-request/add`, formData);
+            const response = await axios.post(`${baseURL}/adoption-request/add/`, formData);
             return response.data;
         } catch (error) {
             handleError(error);
