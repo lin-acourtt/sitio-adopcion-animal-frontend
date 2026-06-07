@@ -18,7 +18,7 @@ const Body = () => {
     const getAnimalsFunc = async() => {
         try {
             const response = await animalAPI['getAllAnimals']();
-            setAnimalData(response);
+            setAnimalData(response.animals);
             setIsAnimalDataLoaded(true);
             console.log(response)
         } catch (error) {
