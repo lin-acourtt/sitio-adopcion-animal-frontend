@@ -15,6 +15,9 @@ export const animalAPI = {
     getAllAnimals: async() => {
         try {
             const response = await axios.get(`${baseURL}/animal/`);
+            console.log("Prueba")
+            console.log(response)
+            console.log("Prueba")
             return response.data;
         } catch (error) {
             handleError(error);
