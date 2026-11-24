@@ -25,6 +25,7 @@ const Header = () => {
                         <Link to="/"><Button_Header text="Adopciones"/></Link>
                         <Link to="/donacion"><Button_Header text="Donar / Apadrinar"/></Link>
                         <Link to="/sobre-nosotros"><Button_Header text="Sobre Nosotros"/></Link>
+                        <Link to="/favoritos"><Button_Header text="Mis Favoritos"/></Link>
                     </ul>
                 </nav>
             </div>
@@ -36,6 +37,7 @@ const Header = () => {
                     <Link to="/"><Option_Hamburguer text="Adopciones"/></Link>
                     <Link to="/donacion"><Option_Hamburguer text="Donar / Apadrinar"/></Link>
                     <Link to="/sobre-nosotros"><Option_Hamburguer text="Sobre Nosotros"/></Link>
+                    <Link to="/favoritos"><Option_Hamburguer text="Mis Favoritos"/></Link>
                 </div>
                 <button className="hover:bg-pink-secondary hover:rounded-xl p-2" onClick={() => setIsOpenHamburger(!isOpenHamburger)}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 20 20" stroke="currentColor">

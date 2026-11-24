@@ -15,7 +15,16 @@ export const animalAPI = {
     getAllAnimals: async() => {
         try {
             const response = await axios.get(`${baseURL}/animal/`);
-            return response.data;
+            //condicional por si el endpoint devuelve un array directamente o un objeto con la propiedad results
+            if (Array.isArray(response.data)) {
+                return response.data;
+            }
+
+            if (Array.isArray(response.data?.results)) {
+                return response.data.results;
+            }
+
+            return [];
         } catch (error) {
             handleError(error);
         }
