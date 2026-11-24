@@ -45,7 +45,8 @@ const Body = () => {
             <div className="flex min-h-full flex-col items-center  w-full bg-bg-beige1 py-3 flex-1">
                 <WarningBanner />
 
-                //filtros
+                //filtros 
+                //todos, perros, gatos
 
                 <div className="flex justify-center gap-6 my-8">
                     <button 
