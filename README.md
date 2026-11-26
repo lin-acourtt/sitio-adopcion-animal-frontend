@@ -35,5 +35,3 @@ A continuación se detallan los commits registrados en la rama `animales_favorit
 
 ---
 
-## 👥 Equipo de Desarrollo (Corporación Universitaria Iberoamericana)
-- **Elkin Dainover Jiménez Gómez** – Ingeniería de Software
